@@ -3,16 +3,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int isPalindrome(string s){
+string isPalindrome(string s){
 	int start = 0;
 	int end = s.size() - 1;
 	while(start < end){
 		if(s[start++] != s[end--]){
-			return 0;
+			return "NO";
 			// cout << "palindrome";
 		}
 	}
-	return 1;
+	return "YES";
 	// cout << "not palindrome";
 }
 
